@@ -14,6 +14,10 @@ const identity = {
 };
 
 const skills = ["Cybersecurity", "Pentest", "SIEM", "SOC", "Linux", "JavaScript", "Astro"];
+
+const happy = true;
+const finished = false;
+const goal = 3;
 ---
 
 <!DOCTYPE html>
@@ -26,6 +30,12 @@ const skills = ["Cybersecurity", "Pentest", "SIEM", "SOC", "Linux", "JavaScript"
 	<a href="/about/">About</a>
 	<a href="/blog/">Blog</a>
 	
+{happy && <p>I am happy to be learning Astro!</p>}
+
+{finished && <p>I finished this tutorial!</p>}
+
+{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+
   <h1>{pageTitle}</h1>
 
   <h2>... and my new Astro site!</h2>
